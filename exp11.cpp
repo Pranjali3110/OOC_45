@@ -92,9 +92,8 @@ public:
 int main()
 {
     cout << "Name: Pranjali Shankar Patil" << endl;
-    cout << "Roll No: 45" << endl;
+    cout << "Roll No : 45" << endl;
     cout << "Division: S.Y. B CSE" << endl;
-    cout << "-----------------------------" << endl << endl;
 
     Employee* employees[3];
     SalariedEmployee newSalariedEmployee;
@@ -116,4 +115,5 @@ int main()
 
     return 0;
 }
+
 
