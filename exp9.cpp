@@ -28,9 +28,9 @@ istream & operator >> (istream &in, Complex &c)
 }
 
 int main(){
-    cout << " Name: Pranjali Shankar Patil\n";
-    cout << " Roll No : 45\n";
-    cout << " Division: S.Y. CSE B\n";
+    cout << "Name  : Pranjali Shankar Patil\n";
+    cout << "Roll No : 45\n";
+    cout << "Class : S.Y. B. CSE\n";
     
     Complex c1;
     cin >> c1;
@@ -38,3 +38,4 @@ int main(){
     cout << c1;
     return 0;
 }
+
