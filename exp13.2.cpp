@@ -1,0 +1,43 @@
+#include <iostream>
+#include <exception>
+using namespace std;
+
+class MyException : public exception
+{
+    public:
+        const char* what() const throw()
+        {
+            return "Attempted to divide by zero!\n";
+        }
+};
+
+int main()
+{
+    cout << "Name  : Pranjali Shankar Patil\n";
+    cout << "Roll No : 45\n";
+    cout << "Class : S.Y. B. CSE\n\n";
+
+    try
+    {
+        int x, y;
+        cout << "Enter the two numbers: \n";
+        cin >> x >> y;
+
+        if (y == 0)
+        {
+            MyException z;
+            throw z;
+        }
+        else 
+        {
+            cout << "x / y = " << x / y << endl;
+        }
+    }
+    catch (exception& e)
+    {  
+        cout << e.what();
+    }
+
+    return 0;
+}
+
